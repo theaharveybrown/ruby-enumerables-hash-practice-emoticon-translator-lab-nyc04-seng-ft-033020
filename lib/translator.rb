@@ -1,9 +1,9 @@
 # require modules here
 require "yaml"
 
-def load_library(file_location)
+def load_library(yaml_path)
   # code goes here
-  emojis = YAML.load_file(file_location)
+  emojis = YAML.load_file(yaml_path)
   translator = {
     'get_meaning' => {},
     'get_emoticon' => {}
@@ -18,7 +18,7 @@ def load_library(file_location)
   
 end
 
-def get_japanese_emoticon(file_location, emoticon)
+def get_japanese_emoticon(yaml_path, emoticon)
   # code goes here
   
 end
