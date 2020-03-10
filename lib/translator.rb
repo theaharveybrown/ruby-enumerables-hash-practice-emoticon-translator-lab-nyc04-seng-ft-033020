@@ -6,7 +6,7 @@ def load_library(file_location)
   emojis = YAML.load_file(file_location)
   translator = {
     :get_meaning = {},
-    
+    :get_emoticon = {}
   }
   emojis.map{|k, v| k}
   
