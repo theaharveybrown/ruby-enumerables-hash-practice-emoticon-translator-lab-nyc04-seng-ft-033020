@@ -23,12 +23,13 @@ def get_japanese_emoticon(yaml_path, emoticon)
   emoticons = load_library(yaml_path)
   
   japanese_emoticon = emoticons['get_emoticon'][emoticon]
-  
-  if !japanese_emoticon
-    
-    puts "Sorry, that emoticon was not found"
-  else 
+  emoticon_exists = !!japanese_emoticon
+  if emoticon_exists
     japanese_emoticon
+  else
+    puts "Sorry, that emoticon was not found"
+   
+    
   end
     
   
