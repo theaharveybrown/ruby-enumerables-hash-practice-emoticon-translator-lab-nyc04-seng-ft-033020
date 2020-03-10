@@ -21,7 +21,7 @@ end
 def get_japanese_emoticon(yaml_path, emoticon)
   # code goes here
   emoticons = load_library(yaml_path)
-  
+  japanese_emoticon = emoticons['get_emoticon'][emoticon]
 end
 
 def get_english_meaning
