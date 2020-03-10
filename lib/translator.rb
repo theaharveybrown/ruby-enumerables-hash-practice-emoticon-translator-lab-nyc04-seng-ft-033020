@@ -9,7 +9,7 @@ def load_library(file_location)
   
   emojis.each do |k, v|
     puts k 
-    # puts v 
+    puts v 
   end 
   # translator[:get_meaning] = emojis.map{|k,v| k}
   # translator[:get_emoticon] = emojis.map{|k,v| v}
@@ -29,3 +29,4 @@ end
 
 load_library("./lib/emoticons.yml")
 
+'get_meaning'][japanese_emoticon]).to eq(meaning)
