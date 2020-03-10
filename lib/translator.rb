@@ -5,7 +5,7 @@ def load_library(file_location)
   # code goes here
   emojis = YAML.load_file(file_location)
   translator = {
-        'get_meaning' => {},
+    'get_meaning' => {},
     'get_emoticon' => {}
     
   }
@@ -13,15 +13,12 @@ def load_library(file_location)
   emojis.each do |k, v|
     # puts k 
     translator['get_meaning'][v[1]] = k
+    # translator['get_emoticon']
     
-    puts translator
     
   end 
-  # translator[:get_meaning] = emojis.map{|k,v| k}
-  # translator[:get_emoticon] = emojis.map{|k,v| v}
-  # translator
   
-  true 
+  translator
   # puts dictionary
 end
 
