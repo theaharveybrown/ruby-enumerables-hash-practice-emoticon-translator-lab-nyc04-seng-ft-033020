@@ -9,10 +9,10 @@ def load_library(file_location)
     'get_emoticon' => {}
     
   }
-  
+  puts emojis
   emojis.each do |k, v|
     # puts k 
-    translator[:get_meaning][v[1]] = k 
+    translator[:get_meaning][v[1]] = k
     
     puts translator
     
