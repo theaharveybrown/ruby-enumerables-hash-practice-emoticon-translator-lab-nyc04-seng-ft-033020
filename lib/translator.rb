@@ -29,4 +29,4 @@ end
 
 load_library("./lib/emoticons.yml")
 
-'get_meaning'][japanese_emoticon]).to eq(meaning)
+# 'get_meaning'][japanese_emoticon]).to eq(meaning)
