@@ -7,12 +7,15 @@ def load_library(file_location)
   translator = {
   }
   
-  emojis.each do 
-  translator[:get_meaning] = emojis.map{|k,v| k}
-  translator[:get_emoticon] = emojis.map{|k,v| v}
-  translator
+  emojis.each do |k, v|
+    puts k 
+    puts v 
+  end 
+  # translator[:get_meaning] = emojis.map{|k,v| k}
+  # translator[:get_emoticon] = emojis.map{|k,v| v}
+  # translator
   
-  
+  true 
   # puts dictionary
 end
 
