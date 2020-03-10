@@ -12,8 +12,8 @@ def load_library(file_location)
   translator[:get_meating] = emojis.map{|k| k}
   puts translator
   
-  emojis.map{|k| dictionary[:get_meaning] = k}
-  puts dictionary
+  
+  # puts dictionary
 end
 
 def get_japanese_emoticon
