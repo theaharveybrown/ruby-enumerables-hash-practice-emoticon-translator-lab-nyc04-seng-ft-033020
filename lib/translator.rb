@@ -9,7 +9,7 @@ def load_library(file_location)
     'get_emoticon' => {}
   }
   
-  translator[:get_meating] = emojis.map{|k,v| k}
+  translator[:get_meaning] = emojis.map{|k,v| k}
   translator[:get_emoticon] = emojis.map{|k,v| v}
   translator
   
