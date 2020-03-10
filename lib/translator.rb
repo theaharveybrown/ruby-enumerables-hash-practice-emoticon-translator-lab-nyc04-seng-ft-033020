@@ -8,7 +8,9 @@ def load_library(file_location)
     :get_meaning = {},
     :get_emoticon = {}
   }
-  emojis.map{|k, v| k}
+  
+  translator[:get_meating] = emojis.map{|k| k}
+  puts translator
   
   emojis.map{|k| dictionary[:get_meaning] = k}
   puts dictionary
