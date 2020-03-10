@@ -8,11 +8,11 @@ def load_library(file_location)
   }
   
   emojis.each do |k, v|
-    puts k 
+    # puts k 
     translator[:get_meaning][v[1]] = k 
     
+    puts translator
     
-    puts v 
   end 
   # translator[:get_meaning] = emojis.map{|k,v| k}
   # translator[:get_emoticon] = emojis.map{|k,v| v}
