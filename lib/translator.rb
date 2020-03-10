@@ -13,7 +13,7 @@ def load_library(file_location)
   emojis.each do |k, v|
     # puts k 
     translator['get_meaning'][v[1]] = k
-    # translator['get_emoticon']
+    translator['get_emoticon'][v[0]] = v[1]
     
     
   end 
