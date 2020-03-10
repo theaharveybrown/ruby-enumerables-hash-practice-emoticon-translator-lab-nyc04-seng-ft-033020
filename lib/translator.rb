@@ -1,7 +1,12 @@
 # require modules here
+require "yaml"
 
-def load_library
+def load_library(file_location)
   # code goes here
+  emojis = YAML.load_file(file_location)
+  
+  emojis.map{|k| dictionary[:get_meaning] = k}
+  puts dictionary
 end
 
 def get_japanese_emoticon
@@ -11,3 +16,5 @@ end
 def get_english_meaning
   # code goes here
 end
+
+load_library("./lib/emoticons.yml")
