@@ -4,6 +4,7 @@ require "yaml"
 def load_library(file_location)
   # code goes here
   emojis = YAML.load_file(file_location)
+  emojis.map{|k, v| k}
   
   emojis.map{|k| dictionary[:get_meaning] = k}
   puts dictionary
